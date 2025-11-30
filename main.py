@@ -4,8 +4,7 @@ import sys
 import json
 import time
 import pytz
-import asyncio
-import requests
+impor
 import subprocess
 import random
 from pyromod import listen
@@ -261,7 +260,7 @@ async def call_html_handler(bot: Client, message: Message):
 # .....,.....,.......,...,.......,....., .....,.....,.......,...,.......,.....,
 @bot.on_message(filters.private & (filters.document | filters.text))
 async def call_drm_handler(bot: Client, m: Message):
-    await drm_handler(bot, m)
+ 
                           
 # .....,.....,.......,...,.......,....., .....,.....,.......,...,.......,.....,
 
@@ -290,16 +289,4 @@ def reset_and_set_commands():
         {"command": "t2h", "description": "🌐 .txt → .html Converter"},
         {"command": "logs", "description": "👁️ View Bot Activity"},
         {"command": "broadcast", "description": "📢 Broadcast to All Users"},
-        {"command": "broadusers", "description": "👨‍❤️‍👨 All Broadcasting Users"},
-        {"command": "addauth", "description": "▶️ Add Authorisation"},
-        {"command": "rmauth", "description": "⏸️ Remove Authorisation "},
-        {"command": "users", "description": "👨‍👨‍👧‍👦 All Premium Users"},
-        {"command": "reset", "description": "✅ Reset the Bot"}
-    ]
-    requests.post(url, json={"commands": commands})
-    
-if __name__ == "__main__":
-    reset_and_set_commands()
-    notify_owner() 
-
-bot.run()
+        {"command": "broadusers", "description": "👨‍❤️‍👨 All Broadcasting
