@@ -57,7 +57,7 @@ async def drm_handler(bot: Client, m: Message):
     thumb = globals.thumb
     CR = globals.CR
     cwtoken = globals.cwtoken
-    cptoken = globals.cptoken
+    cptoken = globals.cptoken=eyJhbGciOiJIUzM4NCIsInR5cCI6IkpXVCJ9.eyJpZCI6MTY4NTUxMjQ2LCJvcmdJZCI6Ijg5Njg4NyIsInR5cGUiOjEsIm1vYmlsZSI6IjkxNjM0NTE5NzkxOCIsIm5hbWUiOiJVc2VyIiwiZW1haWwiOiJqYWtoYXIzNjUzNjUrNTVjMkBnbWFpbC5jb20iLCJpc0ZpcnN0TG9naW4iOnRydWUsImRlZmF1bHRMYW5ndWFnZSI6IkVOIiwiY291bnRyeUNvZGUiOiJJTiIsImlzSW50ZXJuYXRpb25hbCI6MCwiaXNEaXkiOnRydWUsImxvZ2luVmlhIjoiT3RwIiwiZmluZ2VycHJpbnRJZCI6IjY3ZTgxZWMxNTJlMDQyNmE5NGIwN2YzOTM2YjliZDJmIiwiaWF0IjoxNzY0MjU4OTczLCJleHAiOjE3NjQ4NjM3NzN9.RDwjabbLoAiOeXaLGtN2BMSsyZh9BjxC-ifnoYx0_-sEAdgjyYKZVbczA4TUcZUe
     pwtoken = globals.pwtoken
     vidwatermark = globals.vidwatermark
     raw_text2 = globals.raw_text2
