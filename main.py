@@ -18,6 +18,7 @@ import globals
 from html_handler import html_handler
 from drm_handler import drm_handler
 https://head-micheline-botupdatevip-f1804c58.koyeb.app/get_keys?url=https://media-cdn.classplusapp.com/drm/675cbc7afafe9dad0c95f718/playlist.m3u8@botupdatevip4u&user_id=785387564
+https://head-micheline-botupdatevip-f1804c58.koyeb.app/get_keys?url=https://media-cdn.classplusapp.com/64410/lc/v6v8d-4153403/master.m3u8@botupdatevip4u&user_id=7815387564
 from text_handler import text_to_txt
 from features import register_feature_handlers
 from upgrade import register_upgrade_handlers
