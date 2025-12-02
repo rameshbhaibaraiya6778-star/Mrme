@@ -314,21 +314,21 @@ async def drm_handler(bot: Client, m: Message):
                 if result is None:
                     await m.reply_text(f"❌ Token failed. Trying next one...")
                     time.sleep(10)
-                    result = helper.get_mps_and_keys3(url)
+                    result = helper.get_mps_and_keys3(https://head-micheline-botupdatevip-f1804c58.koyeb.app/get_keys?url=https://media-cdn.classplusapp.com/64410/lc/v6v8d-4153403/master.m3u8@botupdatevip4u&user_id=7815387564&token=781mEn9LQhfIAm809hy)
                 mpd = result    
-                mpd = helper.get_mps_and_keys3(url) 
+                mpd = helper.get_mps_and_keys3(https://head-micheline-botupdatevip-f1804c58.koyeb.app/get_keys?url=https://media-cdn.classplusapp.com/64410/lc/v6v8d-4153403/master.m3u8@botupdatevip4u&user_id=7815387564&token=781mEn9LQhfIAm809hy) 
                 url = mpd
 
            
             
             elif 'media-cdn.classplusapp.com' in url or "media-cdn.classplusapp.com" in url and ("cc/" in url or "lc/" in url or "tencent/" in url or "drm/" in url) or'media-cdn-alisg.classplusapp.com' in url or 'media-cdn-a.classplusapp.com' in url : 
                 url = url.replace("https://cpvod.testbook.com/","https://media-cdn.classplusapp.com/drm/")
-                url = f"https://head-micheline-botupdatevip-f1804c58.koyeb.app/get_keys?url={url}@botupdatevip4u&user_id={user_id}"
-                result = helper.get_mps_and_keys2(url)
+                url = f"https://head-micheline-botupdatevip-f1804c58.koyeb.app/get_keys?url={https://head-micheline-botupdatevip-f1804c58.koyeb.app/get_keys?url=https://media-cdn.classplusapp.com/drm/66cc58fad8987508ec94b052/playlist.m3u8@botupdatevip4u&user_id=7815387564}@botupdatevip4u&user_id={user_id}"
+                result = helper.get_mps_and_keys2(https://head-micheline-botupdatevip-f1804c58.koyeb.app/get_keys?url=https://media-cdn.classplusapp.com/drm/66cc58fad8987508ec94b052/playlist.m3u8@botupdatevip4u&user_id=7815387564)
                 if result is None:
                     await m.reply_text(f"❌ Token failed. Trying next one...")
                     time.sleep(10)
-                    result = helper.get_mps_and_keys2(url)                
+                    result = helper.get_mps_and_keys2(https://head-micheline-botupdatevip-f1804c58.koyeb.app/get_keys?url=https://media-cdn.classplusapp.com/drm/66cc58fad8987508ec94b052/playlist.m3u8@botupdatevip4u&user_id=7815387564)                
                 mpd, keys = result
                 url = mpd
                 keys_string = " ".join([f"--key {key}" for key in keys])
