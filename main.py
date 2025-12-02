@@ -17,13 +17,6 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message, 
 import globals
 from html_handler import html_handler
 from drm_handler import drm_handler
-// Non drm 👇👇👇
-def get_mps_and_keys3(https://head-micheline-botupdatevip-f1804c58.koyeb.app/get_keys?url=https://media-cdn.classplusapp.com/64410/lc/v6v8d-4153403/master.m3u8@botupdatevip4u&user_id=7815387564&token=781mEn9LQhfIAm809hy):
-    response = requests.get(https://head-micheline-botupdatevip-f1804c58.koyeb.app/get_keys?url=https://media-cdn.classplusapp.com/64410/lc/v6v8d-4153403/master.m3u8@botupdatevip4u&user_id=7815387564&token=781mEn9LQhfIAm809hy)
-    response_json = response.json()
-    mpd = response_json.get('https://head-micheline-botupdatevip-f1804c58.koyeb.app/get_keys?url=https://media-cdn.classplusapp.com/64410/lc/v6v8d-4153403/master.m3u8@botupdatevip4u&user_id=7815387564&token=781mEn9LQhfIAm809hy')
-    return mpd
-
 from text_handler import text_to_txt
 from features import register_feature_handlers
 from upgrade import register_upgrade_handlers
