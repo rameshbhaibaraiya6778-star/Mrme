@@ -291,47 +291,38 @@ async def drm_handler(bot: Client, m: Message):
             if "acecwply" in url:
                 cmd = f'yt-dlp -o "{name}.%(ext)s" -f "bestvideo[height<={raw_text2}]+bestaudio" --hls-prefer-ffmpeg --no-keep-video --remux-video mkv --no-warning "{url}"'
          
-            elif "https://cpvod.testbook.com/" in url or "classplusapp.com/drm/" in url:
-                url = url.replace("https://cpvod.testbook.com/","https://media-cdn.classplusapp.com/drm/")
-                url = f"https://head-micheline-botupdatevip-f1804c58.koyeb.app/get_keys?url={url}@botupdatevip4u&user_id={user_id}"
-                result = helper.get_mps_and_keys2(url)
-                if result is None:
-                    await m.reply_text(f"❌ Token failed. Trying next one...")
-                    time.sleep(10)
-                    result = helper.get_mps_and_keys2(url)                
-                mpd, keys = result
-                url = mpd
-                keys_string = " ".join([f"--key {key}" for key in keys])
-
-            #elif "classplusapp" in url:
-                #signed_api = f"https://covercel.vercel.app/extract_keys?url={url}@bots_updatee&user_id={user_id}"
-                #response = requests.get(signed_api, timeout=20)
-                #url = response.text.strip()
-                #url = response.json()['url']  
+                       headers = {
+                    'host': 'api.classplusapp.com',
+                    'x-access-token': f'{eyJhbGciOiJIUzM4NCIsInR5cCI6IkpXVCJ9.eyJpZCI6MTY4NTUxMjQ2LCJvcmdJZCI6Ijg5Njg4NyIsInR5cGUiOjEsIm1vYmlsZSI6IjkxNjM0NTE5NzkxOCIsIm5hbWUiOiJVc2VyIiwiZW1haWwiOiJqYWtoYXIzNjUzNjUrNTVjMkBnbWFpbC5jb20iLCJpc0ZpcnN0TG9naW4iOnRydWUsImRlZmF1bHRMYW5ndWFnZSI6IkVOIiwiY291bnRyeUNvZGUiOiJJTiIsImlzSW50ZXJuYXRpb25hbCI6MCwiaXNEaXkiOnRydWUsImxvZ2luVmlhIjoiT3RwIiwiZmluZ2VycHJpbnRJZCI6IjY3ZTgxZWMxNTJlMDQyNmE5NGIwN2YzOTM2YjliZDJmIiwiaWF0IjoxNzY0MjU4OTczLCJleHAiOjE3NjQ4NjM3NzN9.RDwjabbLoAiOeXaLGtN2BMSsyZh9BjxC-ifnoYx0_-sEAdgjyYKZVbczA4TUcZUe}',    
+                    'accept-language': 'EN',
+                    'api-version': '18',
+                    'app-version': '1.4.73.2',
+                    'build-number': '35',
+                    'connection': 'Keep-Alive',
+                    'content-type': 'application/json',
+                    'device-details': 'Xiaomi_Redmi 7_SDK-32',
+                    'device-id': 'c28d3cb16bbdac01',
+                    'region': 'IN',
+                    'user-agent': 'Mobile-Android',
+                    'webengage-luid': '00000187-6fe4-5d41-a530-26186858be4c',
+                    'accept-encoding': 'gzip'
+                }
                 
-            elif 'videos.classplusapp' in url or "tencdn.classplusapp" in url or "webvideos.classplusapp.com" in url:
-                result = helper.get_mps_and_keys3(url)
-                if result is None:
-                    await m.reply_text(f"❌ Token failed. Trying next one...")
-                    time.sleep(10)
-                    result = helper.get_mps_and_keys3(https://head-micheline-botupdatevip-f1804c58.koyeb.app/get_keys?url=https://media-cdn.classplusapp.com/64410/lc/v6v8d-4153403/master.m3u8@botupdatevip4u&user_id=7815387564&token=781mEn9LQhfIAm809hy)
-                mpd = result    
-                mpd = helper.get_mps_and_keys3(https://head-micheline-botupdatevip-f1804c58.koyeb.app/get_keys?url=https://media-cdn.classplusapp.com/64410/lc/v6v8d-4153403/master.m3u8@botupdatevip4u&user_id=7815387564&token=781mEn9LQhfIAm809hy) 
-                url = mpd
+                url = url.replace('https://tencdn.classplusapp.com/', 'https://media-cdn.classplusapp.com/tencent/')
 
-           
-            
-            elif 'media-cdn.classplusapp.com' in url or "media-cdn.classplusapp.com" in url and ("cc/" in url or "lc/" in url or "tencent/" in url or "drm/" in url) or'media-cdn-alisg.classplusapp.com' in url or 'media-cdn-a.classplusapp.com' in url : 
-                url = url.replace("https://cpvod.testbook.com/","https://media-cdn.classplusapp.com/drm/")
-                url = f"https://head-micheline-botupdatevip-f1804c58.koyeb.app/get_keys?url={https://head-micheline-botupdatevip-f1804c58.koyeb.app/get_keys?url=https://media-cdn.classplusapp.com/drm/66cc58fad8987508ec94b052/playlist.m3u8@botupdatevip4u&user_id=7815387564}@botupdatevip4u&user_id={user_id}"
-                result = helper.get_mps_and_keys2(https://head-micheline-botupdatevip-f1804c58.koyeb.app/get_keys?url=https://media-cdn.classplusapp.com/drm/66cc58fad8987508ec94b052/playlist.m3u8@botupdatevip4u&user_id=7815387564)
-                if result is None:
-                    await m.reply_text(f"❌ Token failed. Trying next one...")
-                    time.sleep(10)
-                    result = helper.get_mps_and_keys2(https://head-micheline-botupdatevip-f1804c58.koyeb.app/get_keys?url=https://media-cdn.classplusapp.com/drm/66cc58fad8987508ec94b052/playlist.m3u8@botupdatevip4u&user_id=7815387564)                
-                mpd, keys = result
-                url = mpd
-                keys_string = " ".join([f"--key {key}" for key in keys])
+                params = {
+                    "url": f"{https://media-cdn.classplusapp.com/64410/lc/v6v8d-4153403/master.m3u8}"
+                }
+
+                res = requests.get("https://api.classplusapp.com/cams/uploader/video/jw-signed-url", params=params, headers=headers).json()
+                
+                if "testbook.com" in url or "classplusapp.com/drm" in url or "media-cdn.classplusapp.com/drm" in url:
+                    url = res['drmUrls
+               [https://media-cdn.classplusapp.com/drm/6741c7ec74583d3cd0195b75/playlist.m3u8]['manifestUrl']
+                    
+                else:
+                    url = res["url"]
+                    
 
             if "edge.api.brightcove.com" in url:
                 bcov = f'bcov_auth={cwtoken}'
