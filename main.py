@@ -35,6 +35,16 @@ bot = Client(
     api_hash=API_HASH,
     bot_token=BOT_TOKEN
 )
+cookies_file_path = os.getenv("cookies_file_path", "youtube_cookies.txt")
+api_url = "http://master-api-v3.vercel.app/"
+api_token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNzkxOTMzNDE5NSIsInRnX3VzZXJuYW1lIjoi4p61IFtvZmZsaW5lXSIsImlhdCI6MTczODY5MjA3N30.SXzZ1MZcvMp5sGESj0hBKSghhxJ3k1GTWoBUbivUe1I"
+token_cp ='eyJhbGciOiJIUzM4NCIsInR5cCI6IkpXVCJ9.eyJpZCI6MTcxOTAwMzI3LCJvcmdJZCI6OTg2MjMxLCJ0eXBlIjoxLCJtb2JpbGUiOiI5MTk3MjM5NzExNDYiLCJuYW1lIjoiTWF5YW5rIERhdmUiLCJlbWFpbCI6IjliNjkxZTI4LThiMmItNDNjYS1iNmIwLWEyY2IyOTk4N2NlOUBnbWFpbC5jb20iLCJpc0ZpcnN0TG9naW4iOnRydWUsImRlZmF1bHRMYW5ndWFnZSI6IkVOIiwiY291bnRyeUNvZGUiOiJJTiIsImlzSW50ZXJuYXRpb25hbCI6MCwiaXNEaXkiOnRydWUsImxvZ2luVmlhIjoiT3RwIiwiZmluZ2VycHJpbnRJZCI6ImRmODRjMGVjOTk5YjliZDE4ZTUwOTA3MTM2MDg5ZWQ3IiwiaWF0IjoxNzY3NDUyMTUxLCJleHAiOjE3NjgwNTY5NTF9.iWROQeR1eM-L3RF4C3Be_7FDyyBE-X9WJ9HOBaPify5uEtohixQpBIf_DJF88y3V'
+adda_token = "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJkcGthNTQ3MEBnbWFpbC5jb20iLCJhdWQiOiIxNzg2OTYwNSIsImlhdCI6MTc0NDk0NDQ2NCwiaXNzIjoiYWRkYTI0Ny5jb20iLCJuYW1lIjoiZHBrYSIsImVtYWlsIjoiZHBrYTU0NzBAZ21haWwuY29tIiwicGhvbmUiOiI3MzUyNDA0MTc2IiwidXNlcklkIjoiYWRkYS52MS41NzMyNmRmODVkZDkxZDRiNDkxN2FiZDExN2IwN2ZjOCIsImxvZ2luQXBpVmVyc2lvbiI6MX0.0QOuYFMkCEdVmwMVIPeETa6Kxr70zEslWOIAfC_ylhbku76nDcaBoNVvqN4HivWNwlyT0jkUKjWxZ8AbdorMLg"
+photologo = 'https://i.ibb.co/hFBKqXhS/file-29385.jpg' #https://i.ibb.co/hFBKqXhS/file-29385.jpg
+photoyt = 'https://i.ibb.co/hFBKqXhS/file-29385.jpg' #https://i.ibb.co/hFBKqXhS/file-29385.jpg
+photocp = 'https://i.ibb.co/hFBKqXhS/file-29385.jpg'
+photozip = 'https://i.ibb.co/hFBKqXhS/file-29385.jpg'
+
 # .....,.....,.......,...,.......,....., .....,.....,.......,...,.......,.....,
 register_feature_handlers(bot)
 register_settings_handlers(bot)
